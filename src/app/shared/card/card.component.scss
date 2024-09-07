@@ -1,0 +1,18 @@
+.card {
+    padding: 16px;
+
+
+    .card-header {
+        display: flex;
+        justify-content: center;
+        
+        .icon {
+            display: block;
+            width: 100px
+        }
+    }
+
+    .content {
+        padding-top: 16px;
+    }
+}

@@ -1,0 +1,12 @@
+.nav-list {
+    width: 240px;
+    padding: 16px 8px;
+    height: calc(100vh - 75px);
+    overflow: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #c4c6d0;
+
+    .is-active {
+        background: #005cbb40;
+    }
+}
