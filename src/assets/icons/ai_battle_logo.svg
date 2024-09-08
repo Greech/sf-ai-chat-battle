@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Outer Circle (Battle Arena) -->
+  <circle cx="150" cy="150" r="130" fill="none" stroke="#ddd" stroke-width="4" />
+
+  <!-- ChatGPT Initial - Green Circle with 'C' -->
+  <circle cx="85" cy="85" r="45" fill="#6beabf" />
+  <text x="85" y="85" fill="#fff" font-size="30" font-family="Arial" text-anchor="middle" dy=".3em" font-weight="bold">C</text>
+
+  <!-- Gemini Initial - Blue Circle with 'G' -->
+  <circle cx="215" cy="85" r="45" fill="#70bfff" />
+  <text x="215" y="85" fill="#fff" font-size="30" font-family="Arial" text-anchor="middle" dy=".3em" font-weight="bold">G</text>
+
+  <!-- Claude Initial - Orange Circle with 'C' -->
+  <circle cx="150" cy="215" r="45" fill="#ffcc80" />
+  <text x="150" y="215" fill="#fff" font-size="30" font-family="Arial" text-anchor="middle" dy=".3em" font-weight="bold">C</text>
+
+  <!-- Connecting Battle Triangle -->
+  <polygon points="85,85 215,85 150,215" fill="none" stroke="#ff6f61" stroke-width="4" stroke-linejoin="round" />
+
+  <!-- Central 'Vs' Text -->
+  <text x="150" y="150" fill="#ff6f61" font-size="50" font-family="Arial" text-anchor="middle" dy=".3em" font-weight="bold">VS</text>
+</svg>

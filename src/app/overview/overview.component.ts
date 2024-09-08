@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatCard } from '@angular/material/card';
-import { ChatGptPasswordStrengthComponent } from '../../chat-gpt/chat-gpt-password-strength/chat-gpt-password-strength.component';
-import { ClaudePasswordStrengthComponent } from '../../claude/claude-password-strength/claude-password-strength.component';
-import { GeminiPasswordStrengthComponent } from '../../gemini/gemini-password-strength/gemini-password-strength.component';
+import { ChatGptPasswordStrengthComponent } from '../chat-gpt/chat-gpt-password-strength/chat-gpt-password-strength.component';
+import { ClaudePasswordStrengthComponent } from '../claude/claude-password-strength/claude-password-strength.component';
+import { GeminiPasswordStrengthComponent } from '../gemini/gemini-password-strength/gemini-password-strength.component';
 
 @Component({
   selector: 'sf-ai-overview',

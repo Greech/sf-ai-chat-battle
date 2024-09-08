@@ -5,7 +5,6 @@ import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbar } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './shared/nav/nav.component';
-import { CustomIconRegisterComponent } from './shared/custom-icon-register/custom-icon-register.component';
 
 @Component({
   selector: 'sf-ai-root',
@@ -18,8 +17,7 @@ import { CustomIconRegisterComponent } from './shared/custom-icon-register/custo
     MatIconButton,
     MatIcon,
     NavComponent,
-    MatButtonModule,
-    CustomIconRegisterComponent
+    MatButtonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

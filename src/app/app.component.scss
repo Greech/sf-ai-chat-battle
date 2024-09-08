@@ -9,3 +9,9 @@
 .toolbar {
     background-color: #d7e3ff;
 }   
+
+.icon {
+    $logoSize: 40px;
+    height: $logoSize;
+    width: $logoSize;
+}

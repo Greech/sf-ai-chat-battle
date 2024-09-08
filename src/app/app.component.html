@@ -2,6 +2,10 @@
   <button (click)="toggleSidenav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
+  <mat-icon
+    svgIcon="ai-battle-icon" 
+    class="icon">
+  </mat-icon>
   <a mat-button routerLink="/">AI Battle</a>
 </mat-toolbar>
 <mat-drawer-container class="drawer-container">
@@ -12,5 +16,3 @@
     <router-outlet />
   </mat-drawer-content>
 </mat-drawer-container>
-
-<sf-ai-custom-icon-register></sf-ai-custom-icon-register>

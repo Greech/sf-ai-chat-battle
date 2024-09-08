@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { ChatGptPasswordStrengthComponent } from './chat-gpt/chat-gpt-password-strength/chat-gpt-password-strength.component';
 import { ClaudePasswordStrengthComponent } from './claude/claude-password-strength/claude-password-strength.component';
 import { GeminiPasswordStrengthComponent } from './gemini/gemini-password-strength/gemini-password-strength.component';
-import { OverviewComponent } from './views/overview/overview.component';
+import { OverviewComponent } from './overview/overview.component';
 
 export const routes: Routes = [
     { path: 'overview', component: OverviewComponent },
