@@ -1,1 +1,119 @@
-<p>score works!</p>
+<div class="score-page">
+    <div class="forms-section">
+        <sf-ai-card iconName="chat-gpt-icon">
+            <form id="chatGPT-score">
+                <mat-form-field>
+                  <mat-label>Zrozumienie zadania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="chatGPT-understanding" name="chatGPTUnderstanding" [(ngModel)]="chatGPTScores.understanding" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Jakość kodu</mat-label>
+                  <input matInput type="number" min="1" max="5" id="chatGPT-code-quality" name="chatGPTCodeQuality" [(ngModel)]="chatGPTScores.codeQuality" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Kompleksowość rozwiązania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="chatGPT-complexity" name="chatGPTComplexity" [(ngModel)]="chatGPTScores.complexity" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Elastyczność rozwiązania</mat-label>
+                    <input matInput type="number" min="1" max="5" id="chatGPT-elasticity" name="chatGPTElasticity" [(ngModel)]="chatGPTScores.elasticity" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>UX/UI</mat-label>
+                    <input matInput type="number" min="1" max="5" id="chatGPT-uxui" name="chatGPTuxui" [(ngModel)]="chatGPTScores.uxui" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Zastosowanie w praktyce</mat-label>
+                    <input matInput type="number" min="1" max="5" id="chatGPT-practice" name="chatGPTpractice" [(ngModel)]="chatGPTScores.practice" (ngModelChange)="saveScores('chatGPT', chatGPTScores)">
+                </mat-form-field>
+        
+                <!-- Dodaj pozostałe kategorie w podobny sposób -->
+              </form>
+        </sf-ai-card>
+        <sf-ai-card iconName="gemini-icon">
+            <form id="gemini-score">
+                <mat-form-field>
+                  <mat-label>Zrozumienie zadania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="gemini-understanding" name="geminiUnderstanding" [(ngModel)]="geminiScores.understanding" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Jakość kodu</mat-label>
+                  <input matInput type="number" min="1" max="5" id="gemini-code-quality" name="geminiCodeQuality" [(ngModel)]="geminiScores.codeQuality" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Kompleksowość rozwiązania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="gemini-complexity" name="geminiComplexity" [(ngModel)]="geminiScores.complexity" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+                
+                <mat-form-field>
+                    <mat-label>Elastyczność rozwiązania</mat-label>
+                    <input matInput type="number" min="1" max="5" id="gemini-elasticity" name="geminiElasticity" [(ngModel)]="geminiScores.elasticity" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>UX/UI</mat-label>
+                    <input matInput type="number" min="1" max="5" id="gemini-uxui" name="geminiUxui" [(ngModel)]="geminiScores.uxui" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Zastosowanie w praktyce</mat-label>
+                    <input matInput type="number" min="1" max="5" id="gemini-practice" name="geminiPractice" [(ngModel)]="geminiScores.practice" (ngModelChange)="saveScores('gemini', geminiScores)">
+                </mat-form-field>
+              </form>
+        </sf-ai-card>
+        <sf-ai-card iconName="claude-icon">
+            <form id="claude-score">
+                <mat-form-field>
+                  <mat-label>Zrozumienie zadania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="claude-understanding" name="claudeUnderstanding" [(ngModel)]="claudeScores.understanding" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Jakość kodu</mat-label>
+                  <input matInput type="number" min="1" max="5" id="claude-code-quality" name="claudeCodeQuality" [(ngModel)]="claudeScores.codeQuality" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                  <mat-label>Kompleksowość rozwiązania</mat-label>
+                  <input matInput type="number" min="1" max="5" id="claude-complexity" name="claudeComplexity" [(ngModel)]="claudeScores.complexity" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+        
+                <mat-form-field>
+                    <mat-label>Elastyczność rozwiązania</mat-label>
+                    <input matInput type="number" min="1" max="5" id="claude-elasticity" name="claudeElasticity" [(ngModel)]="claudeScores.elasticity" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>UX/UI</mat-label>
+                    <input matInput type="number" min="1" max="5" id="claude-uxui" name="claudeUxui" [(ngModel)]="claudeScores.uxui" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Zastosowanie w praktyce</mat-label>
+                    <input matInput type="number" min="1" max="5" id="claude-practice" name="claudePractice" [(ngModel)]="claudeScores.practice" (ngModelChange)="saveScores('claude', claudeScores)">
+                </mat-form-field>
+                <!-- Dodaj pozostałe kategorie w podobny sposób -->
+              </form>
+        </sf-ai-card>
+    </div>
+  
+    <!-- Sidebar with live updates -->
+    <div class="sidebar">
+      <mat-card>
+        <h3>Aktualny wynik</h3>
+        <ul [@reorderAnimation]="hasTotalChanged()">
+          <li *ngFor="let score of sortedScores()">
+            {{ score.name }}: {{ score.total }}
+          </li>
+        </ul>
+      </mat-card>
+    </div>
+  </div>
+  

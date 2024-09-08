@@ -1,0 +1,42 @@
+.score-page {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forms-section {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    width: 25%;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+
+    mat-card {
+        padding: 16px;
+    }
+  }
+  
+  mat-card {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+
+  sf-ai-card {
+    width: 30%;
+  }
