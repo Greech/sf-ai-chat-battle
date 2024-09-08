@@ -108,7 +108,7 @@
     <div class="sidebar">
       <mat-card>
         <h3>Aktualny wynik</h3>
-        <ul [@reorderAnimation]="hasTotalChanged()">
+        <ul>
           <li *ngFor="let score of sortedScores()">
             {{ score.name }}: {{ score.total }}
           </li>

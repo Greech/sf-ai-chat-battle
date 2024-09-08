@@ -1,51 +1,49 @@
   <div class="layout-container">
-      <!-- Tab: Competitors -->
-            <table mat-table [dataSource]="competitorData" class="mat-elevation-z8">
-              <!-- Column for Model -->
-              <ng-container matColumnDef="model">
-                <th mat-header-cell *matHeaderCellDef> Model </th>
-                <td mat-cell *matCellDef="let element"> {{element.model}} </td>
-              </ng-container>
-  
-              <!-- Column for Price -->
-              <ng-container matColumnDef="price">
-                <th mat-header-cell *matHeaderCellDef> Cena miesięcznie </th>
-                <td mat-cell *matCellDef="let element"> {{element.price}} </td>
-              </ng-container>
-  
-              <!-- Column for Throughput -->
-              <ng-container matColumnDef="throughput">
-                <th mat-header-cell *matHeaderCellDef> Przepustowość </th>
-                <td mat-cell *matCellDef="let element"> {{element.throughput}} </td>
-              </ng-container>
-  
-              <!-- Column for API -->
-              <ng-container matColumnDef="api">
-                <th mat-header-cell *matHeaderCellDef> API </th>
-                <td mat-cell *matCellDef="let element"> {{element.api}} </td>
-              </ng-container>
-  
-              <!-- Column for Usage -->
-              <ng-container matColumnDef="usage">
-                <th mat-header-cell *matHeaderCellDef> Zastosowanie </th>
-                <td mat-cell *matCellDef="let element"> {{element.usage}} </td>
-              </ng-container>
-  
-              <!-- Column for Context Limit -->
-              <ng-container matColumnDef="contextLimit">
-                <th mat-header-cell *matHeaderCellDef> Limit kontekstu </th>
-                <td mat-cell *matCellDef="let element"> {{element.contextLimit}} </td>
-              </ng-container>
-  
-              <!-- Column for NPM Support -->
-              <ng-container matColumnDef="npmSupport">
-                <th mat-header-cell *matHeaderCellDef> Wsparcie NPM </th>
-                <td mat-cell *matCellDef="let element"> {{element.npmSupport}} </td>
-              </ng-container>
-  
-              <!-- Header and rows -->
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
+    <div class="cards-container">
+        <sf-ai-card
+            iconName="chat-gpt-icon"
+        >
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <p><strong>Model: </strong>Chat GPT 4o</p>
+                <p><strong>Koszt: </strong>77,33 zł (20$)</p>
+                <p><strong>Przepustowość:</strong> 32k tokenów</p>
+                <p><strong>API:</strong> Pełne wsparcie dla NPM, oficjalny pakiet OpenAI</p>
+                <p><strong>Zastosowanie:</strong> Generowanie tekstu, analiza, pomoc w kodowaniu</p>
+                <p><strong>Limit kontekstu:</strong> 8k-32k tokenów</p>
+                <p><strong>Wsparcie NPM:</strong> Pełne wsparcie</p>
+            </mat-card-content>
+        </sf-ai-card>       
+        
+        <sf-ai-card
+            iconName="gemini-icon"
+        >
+            <mat-divider></mat-divider>
+          <mat-card-content>
+            <p><strong>Model: </strong>Gemini Advanced 2T</p>
+            <p><strong>Koszt: </strong>97,99 zł</p>
+            <p><strong>Przepustowość:</strong> 100k tokenów</p>
+            <p><strong>API:</strong> Nowoczesne API do NLP, brak oficjalnego wsparcia dla NPM</p>
+            <p><strong>Zastosowanie:</strong> Predykcje tekstu, analiza języka naturalnego</p>
+            <p><strong>Limit kontekstu:</strong> 100k tokenów</p>
+            <p><strong>Wsparcie NPM:</strong> Ograniczone, wymaga adapterów</p>
+          </mat-card-content>
+        </sf-ai-card>
+          
+        <sf-ai-card
+            iconName="claude-icon"
+        >
+          <mat-divider></mat-divider>
+          <mat-card-content>
+            <p><strong>Model: </strong>Claude 3.5 Sonnet</p>
+            <p><strong>Koszt:</strong> 94,80 zł (22,14 EUR)</p>
+            <p><strong>Przepustowość:</strong> 50k tokenów</p>
+            <p><strong>API:</strong> Kompatybilne z Node.js, API REST</p>
+            <p><strong>Zastosowanie:</strong> Bezpieczeństwo, złożone analizy danych</p>
+            <p><strong>Limit kontekstu:</strong> 100k tokenów</p>
+            <p><strong>Wsparcie NPM:</strong> Brak oficjalnego wsparcia, zewnętrzne adaptery</p>
+          </mat-card-content>
+        </sf-ai-card>
+      </div>
   </div>
   

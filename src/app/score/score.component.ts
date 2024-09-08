@@ -6,7 +6,6 @@ import { MatFormField, MatFormFieldModule, MatLabel } from '@angular/material/fo
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { CardComponent } from '../shared/card/card.component';
-import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({
   selector: 'sf-ai-score',
