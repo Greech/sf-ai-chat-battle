@@ -1,13 +1,17 @@
 import { Routes } from '@angular/router';
-import { ChatGptPasswordStrengthComponent } from './chat-gpt/chat-gpt-password-strength/chat-gpt-password-strength.component';
-import { ClaudePasswordStrengthComponent } from './claude/claude-password-strength/claude-password-strength.component';
-import { GeminiPasswordStrengthComponent } from './gemini/gemini-password-strength/gemini-password-strength.component';
-import { OverviewComponent } from './overview/overview.component';
+import { AiBattleOverviewComponent } from './ai-battle-overview/ai-battle-overview.component';
+import { TaskDescriptionComponent } from './task-description/task-description.component';
+import { CompatitorsDescriptionComponent } from './compatitors-description/compatitors-description.component';
+import { ScoreComponent } from './score/score.component';
+import { ScoreCriteriasComponent } from './score-criterias/score-criterias.component';
+import { AiBattleOverviewSingleChatComponent } from './ai-battle-overview-single-chat/ai-battle-overview-single-chat.component';
 
 export const routes: Routes = [
-    { path: 'overview', component: OverviewComponent },
-    { path: 'chat-gpt', component: ChatGptPasswordStrengthComponent },
-    { path: 'gemini', component: GeminiPasswordStrengthComponent },
-    { path: 'claude', component: ClaudePasswordStrengthComponent },
+    { path: 'overview', component: AiBattleOverviewComponent },
+    { path: 'overview-single', component: AiBattleOverviewSingleChatComponent },
+    { path: 'task', component: TaskDescriptionComponent },
+    { path: 'compatitors', component: CompatitorsDescriptionComponent},
+    { path: 'score' , component: ScoreComponent },
+    { path: 'score-criterias' , component: ScoreCriteriasComponent },
     { path: '', redirectTo: '/overview', pathMatch: 'full' }    
 ];

@@ -23,9 +23,4 @@ import { NavComponent } from './shared/nav/nav.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  @ViewChild('drawer') drawer!: MatDrawer;
-
-  toggleSidenav() {
-    this.drawer.toggle();
-  }
 }
